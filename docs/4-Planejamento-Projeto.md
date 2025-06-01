@@ -24,22 +24,22 @@ Welbert: ficou responsável pela definição do contexto do projeto, incluindo o
 
   
 ### Sprint 1
-- _Scrum master_: AlunaX
-- Protótipos: AlunoY
-- Testes: AlunoK
-- Documentação: AlunaZ
+- _Scrum master_: Welbert
+- Protótipos: André, Rafael, Gustavo e Vinicius
+- Testes: João e Vitor
+- Documentação: Welbert
 
 ### Sprint 2
-- _Scrum master_: AlunaY
-- Desenvolvedor _front-end_: AlunoX
-- Desenvolvedor _back-end_: AlunoK
-- Testes: AlunaZ
+- _Scrum master_: Welbert
+- Desenvolvedor _front-end_: Gustavo, Vinicius e João
+- Desenvolvedor _back-end_: André e Rafael
+- Testes: Vitor
 - 
 ### Sprint 3
-- _Scrum master_: AlunaY
-- Desenvolvedor _front-end_: AlunoX
-- Desenvolvedor _back-end_: AlunoK
-- Testes: AlunaZ
+- _Scrum master_: Welbert
+- Desenvolvedor _front-end_: Vinicius e João
+- Desenvolvedor _back-end_: André, Rafael e Gustavo
+- Testes: Vitor
 
   
 ## Quadro de tarefas
@@ -50,38 +50,41 @@ Welbert: ficou responsável pela definição do contexto do projeto, incluindo o
 
 | A Fazer                           | Em Progresso                         | Concluído                                 |
 |----------------------------------|--------------------------------------|-------------------------------------------|
-| Modelagem do banco de dados      | Projeto de interface (Rafael/André) | Contexto do projeto (Welbert)             |
-| Estrutura HTML/CSS básica        |                                      | Especificação do projeto (Gustavo/João)   |
-| Implementar sistema de cadastro  |                                      | Levantamento de requisitos                |
-| Criar sistema de busca e filtro  |                                      | Diagrama de casos de uso                  |
-| Tela de perfil de usuário        |                                      |                                           |
-| documentação final (Vinicios)    |                                       |                                           |
-| Testes com usuários              |                                      |                                           |
-
-
-
-
+|                                  | Anuncie Local                        | Contexto do projeto (Welbert)             |
+|                                  | Correção Quem somos                  | Especificação do projeto (Gustavo/João)   |
+|                                  |  Hub de Locais                       | Levantamento de requisitos                |
+|                                  |  Pagina do Usuario                   | Diagrama de casos de uso                  |
+|                                  |                                      | Projeto de interface (Rafael/André)       |
+|                                  |                                      | Modelagem do banco de dados               |
+|                                  |                                      | Estrutura HTML/CSS básica                 |
+|                                  |                                      | Implementar sistema de cadastro           |
+|                                  |                                      | Criar sistema de busca e filtro           |
+|                                  |                                      | Tela de perfil de usuário                 |
+|                                  |                                      | documentação final (Vinicios)             |
+|                                  |                                      | Testes com usuários                       |
+|                                  |                                      | Sprint 1                                  |
+                                                                          
 ## Sprint 1
 
-Atualizado em: 21/04/2024
+Atualizado em: 24/05/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/01/2005      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| André e Rafael| Landing Page | 13/04/2025     | 20/04/2025 | ✔️    | 19/04/2025      |
+| Gustavo e Vitor| Fale Conosco   | 13/04/2025     | 20/04/2025 | ✔️    |  19/04/2025|
+| Welbert        | Documentação   | 13/04/2025     | 20/04/2025 | ✔️     |     19/04/2025|
+| João e Vincius      | Quem Somos  |    13/04/2025        | 20/04/2025 | ✔️    |  19/04/2025  |
 
 ## Sprint 2
 
-Atualizado em: 21/04/2024
+Atualizado em: 24/05/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Home-Page        | 01/02/2024     | 07/03/2024 | ✔️    | 05/01/2005      |
-| AlunaZ        | CSS Unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| André e Rafael| Anuncie Local      | 18/05/2025     | 25/05/2025 | 📝    |     |
+| João  | Correção Quem somos   | 18/05/2025     | 25/05/2025 | 📝    |                 |
+| Gustavo e Vinicius   | Hub de Locais  | 18/05/2025    | 25/05/2025 | 📝     |                 |
+| Vitor      | Pagina do Usuario  |  18/05/2025   | 25/05/2025 | 📝    |       |
 
 ## Sprint 3
 
@@ -106,10 +109,10 @@ Legenda:
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de diagramação.
-- Frameworks 
-- Outras ferramentas externas
+- Github
+- Whatsapp (comunicação)
+- Visual Studio Code
+- Github Desktop
 
 
 ## Links Úteis

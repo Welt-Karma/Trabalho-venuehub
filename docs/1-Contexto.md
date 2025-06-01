@@ -1,17 +1,12 @@
 # Introdução
 
 ## Problema
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
+> Hoje em dia muitas pessoas tem problemas em marcar locais de festa e celebrações
+> não tendo uma forma facil de fazer isso, muitas vezes tento problemas com o local
+> e aceitando preços abusivos por falta de comparação a outros locais
+> o Link abaixo mostra varios problemas que podem acontecer
+>  - [Link de 10 Problemas na produção de um evento](https://acordecultural.com.br/10-principais-problemas-na-producao-de-eventos-e-como-resolve-los/)
+> 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
@@ -19,21 +14,19 @@
 
 ## Objetivos
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
+> Nosso site tem o objetivo de facilitar a comunicação entre o contratante e o contratado
+> para eventos deixando tudo mais claro, além de fazer o usuario ter noção do espaço e da
+> equipe do local, um problema bem comum, focamos na clareza do consumidor,
+> para que tenham noção de preços bons para o local escolhido, equipe competente e infraestrutura
 > 
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
+> Existem aplicativos e sites parecidos
+> porém nenhum deles é focado e nem intuitivo pra isso, além de muitas vezes
+> não tendo noção de localização e infraestrutura para eventos maiores
 > 
 > O grupo de trabalho pode fazer uso de questionários, entrevistas e
 > dados estatísticos, que podem ser apresentados, com o objetivo de
@@ -44,16 +37,10 @@
 
 ## Público-Alvo
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
+> Nosso Público-Alvo é Principalmente Pessoas Adultas que Planejam eventos como
+> Happy hours, Casamentos, etc.
+> mas não se limitando a isso, sendo tambem Jovens que querem realizar festas,
+> como Retiros, Festas de Debutante e Aniversários 
 > 
 > **Links Úteis**:
 > - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
