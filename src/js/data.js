@@ -11,7 +11,12 @@ const lugaresDestaque = [
     bairro: "Pampulha",
     capacidade: 300,
     preco: 15000,
-    avaliacao: 4.8
+    avaliacao: 4.8,
+    fotos: [
+      "../docs/images/pampulha-1.jpg",
+      "../docs/images/pampulha-2.jpg",
+      "../docs/images/pampulha-3.jpg"
+    ]
   },
   {
     id: 2,
@@ -23,7 +28,11 @@ const lugaresDestaque = [
     bairro: "Itaim Bibi",
     capacidade: 150,
     preco: 8500,
-    avaliacao: 4.6
+    avaliacao: 4.6,
+    fotos: [
+      "../docs/images/bi72-1.jpg",
+      "../docs/images/bi72-2.jpg"
+    ]
   },
   {
     id: 3,
@@ -35,7 +44,11 @@ const lugaresDestaque = [
     bairro: "Leblon",
     capacidade: 120,
     preco: 12000,
-    avaliacao: 4.9
+    avaliacao: 4.9,
+    fotos: [
+      "../docs/images/catharina-1.jpg",
+      "../docs/images/catharina-2.jpg"
+    ]
   },
   {
     id: 4,
@@ -106,36 +119,27 @@ function carregarDestaques(filtros = {}) {
   } else {
     locaisFiltrados.forEach(lugar => {
       html += `
-        <div class="col-md-4 mb-4" data-aos="fade-up">
-          <div class="card h-100">
-            <img src="${lugar.imagem}" class="card-img-top" alt="${lugar.nome}" style="height: 200px; object-fit: cover;">
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-start">
-                <h5 class="card-title">${lugar.nome}</h5>
-                <span class="badge bg-primary">${lugar.avaliacao} ⭐</span>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <a href="src/pages/detalhes.html?id=${lugar.id}" class="text-decoration-none">
+              <img src="${lugar.imagem}" class="card-img-top" alt="${lugar.nome}" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h5 class="card-title text-dark">${lugar.nome}</h5>
+                  <span class="badge bg-primary">${lugar.avaliacao} ⭐</span>
+                </div>
+                <p class="card-text text-muted">${lugar.descricao}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">R$ ${lugar.preco.toLocaleString('pt-BR')}</span>
+                  <span class="badge bg-light text-dark">${lugar.capacidade} pessoas</span>
+                </div>
               </div>
-              <p class="card-text text-muted">${lugar.descricao}</p>
-              <ul class="list-group list-group-flush mb-3">
-                <li class="list-group-item d-flex justify-content-between">
-                  <span>Tipo:</span>
-                  <strong>${lugar.tipo}</strong>
-                </li>
-                <li class="list-group-item d-flex justify-content-between">
-                  <span>Local:</span>
-                  <strong>${lugar.bairro}, ${lugar.localidade}</strong>
-                </li>
-                <li class="list-group-item d-flex justify-content-between">
-                  <span>Capacidade:</span>
-                  <strong>${lugar.capacidade} pessoas</strong>
-                </li>
-              </ul>
-            </div>
-            <div class="card-footer bg-white border-top-0">
-              <div class="d-flex justify-content-between align-items-center">
-                <h5 class="mb-0 text-primary">R$ ${lugar.preco.toLocaleString('pt-BR')}</h5>
-                <button class="btn btn-primary">Reservar</button>
+              <div class="card-footer bg-white border-top-0">
+                <div class="d-grid">
+                  <button class="btn btn-outline-primary">Ver Detalhes</button>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       `;

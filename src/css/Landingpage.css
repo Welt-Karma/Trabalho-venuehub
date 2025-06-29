@@ -153,15 +153,13 @@ body {
 
 .card {
   transition: all 0.3s ease;
-  border: none;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
 }
 
 .card-img-top {
@@ -169,7 +167,15 @@ body {
 }
 
 .card:hover .card-img-top {
-  transform: scale(1.05);
+  transform: scale(1.03);
+}
+
+.card-title {
+  transition: color 0.3s;
+}
+
+.card:hover .card-title {
+  color: var(--primary) !important;
 }
 
 .badge {

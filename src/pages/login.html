@@ -26,11 +26,11 @@
   <main>
     <section class="login-container">
       <h2>Login</h2>
-      <input type="text" class="input-field" placeholder="Seu Email">
-      <input type="password" class="input-field" placeholder="Sua Senha">
-      <button class="login-button">Entrar</button>
+      <input type="text" id="email" class="input-field" placeholder="Seu Email">
+      <input type="password" id="senha" class="input-field" placeholder="Sua Senha">
+      <button class="login-button" id="loginBtn">Entrar</button>
       <div class="footer-text">
-        Não tem uma conta? <a href="#">Cadastre-se</a>
+        Não tem uma conta? <a href="../pages/cadastro.html">Cadastre-se</a>
       </div>
     </section>
   </main>
@@ -70,5 +70,29 @@
       <p>© 2025 VenueHub. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('loginBtn').addEventListener('click', function () {
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
+
+      fetch('http://localhost:3000/usuarios')
+        .then(res => res.json())
+        .then(usuarios => {
+          const usuario = usuarios.find(u => u.email === email && u.senha === senha);
+
+          if (usuario) {
+            alert(`Bem-vindo de volta, ${usuario.nome}!`);
+            window.location.href = '../../index.html'; 
+          } else {
+            alert('Email ou senha incorretos. Tente novamente.');
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          alert('Erro na conexão com o servidor.');
+        });
+    });
+  </script>
 </body>
 </html>
