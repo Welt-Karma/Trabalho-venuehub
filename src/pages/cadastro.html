@@ -13,13 +13,13 @@
   <header class="header">
   <div class="container">
     <div class="logo">
-      <a href="../../index.html"><img src="../../docs/images/venue.png" alt="VesnueHub Logo"></a>
+      <a href="/index.html"><img src="../../docs/images/venue.png" alt="VesnueHub Logo"></a>
     </div>
     <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
     <nav class="nav">
-      <a href="./anuncieseulocal.html">Anuncie seu Local</a>
-      <a href="./faleconosco.html">Fale Conosco</a>
-      <a href="./quemsomos.html">Quem somos</a>
+      <a href="/src/pages/anuncieseulocal.html">Anuncie seu Local</a>
+      <a href="/src/pages/faleconosco.html">Fale Conosco</a>
+      <a href="/src/pages/quemsomos.html">Quem somos</a>
     </nav>
   </div>
 </header>
@@ -98,57 +98,28 @@
       <p>© 2025 VenueHub. Todos os direitos reservados.</p>
     </div>
   </footer>
-  <script>
-  document.querySelector('.cadastro-form').addEventListener('submit', function (e) {
+  
+  <script type="module">
+  import { criarUsuario } from '../js/api.js';
+
+  document.querySelector('.cadastro-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('senha').value;
-    const confirmarSenha = document.getElementById('confirmar-senha').value;
-    const termos = document.getElementById('termos').checked;
-
-    if (senha !== confirmarSenha) {
-      alert('As senhas não coincidem.');
-      return;
-    }
-
-    if (!termos) {
-      alert('Você precisa aceitar os termos para continuar.');
-      return;
-    }
-
+    
     const novoUsuario = {
-      nome: nome,
-      email: email,
-      senha: senha
+      nome: document.getElementById('nome').value,
+      email: document.getElementById('email').value,
+      senha: document.getElementById('senha').value,
+      tipo: 'cliente'
     };
-
-    fetch('http://localhost:3000/usuarios', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(novoUsuario)
-    })
-    .then(res => {
-  if (res.ok) {
-    alert(`Bem-vindo ao VenueHub, ${nome}!`);
-    window.location.href = 'login.html'; 
-  } else {
-    alert('Erro ao cadastrar. Tente novamente.');
-  }
-})
-
-    .catch(err => {
-      console.error(err);
-      alert('Erro na conexão com o servidor.');
-    });
+    
+    try {
+      await criarUsuario(novoUsuario);
+      alert('Cadastro realizado com sucesso!');
+      window.location.href = 'login.html';
+    } catch (error) {
+      alert('Erro no cadastro: ' + error.message);
+    }
   });
-  document.querySelector('.menu-toggle').addEventListener('click', () => {
-  document.querySelector('.nav').classList.toggle('active');
-});
-
 </script>
 
 </body>

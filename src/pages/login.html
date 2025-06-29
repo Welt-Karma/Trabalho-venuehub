@@ -71,28 +71,30 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('loginBtn').addEventListener('click', function () {
-      const email = document.getElementById('email').value;
-      const senha = document.getElementById('senha').value;
+<script type="module">
+  // Importa a função de login da API
+  import { loginUsuario } from '../js/api.js';
 
-      fetch('http://localhost:3000/usuarios')
-        .then(res => res.json())
-        .then(usuarios => {
-          const usuario = usuarios.find(u => u.email === email && u.senha === senha);
+  document.querySelector('.login-button').addEventListener('click', async (e) => {
+    e.preventDefault();
+    
+    const email = document.querySelector('.input-field[type="text"]').value;
+    const senha = document.querySelector('.input-field[type="password"]').value;
+    
+    try {
+      const usuario = await loginUsuario(email, senha);
+      
+      if(usuario) {
+        localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
+        window.location.href = 'perfil.html';
+      } else {
+        alert('Credenciais inválidas!');
+      }
+    } catch (error) {
+      alert('Erro ao fazer login: ' + error.message);
+    }
+  });
+</script>
 
-          if (usuario) {
-            alert(`Bem-vindo de volta, ${usuario.nome}!`);
-            window.location.href = '../../index.html'; 
-          } else {
-            alert('Email ou senha incorretos. Tente novamente.');
-          }
-        })
-        .catch(err => {
-          console.error(err);
-          alert('Erro na conexão com o servidor.');
-        });
-    });
-  </script>
 </body>
 </html>

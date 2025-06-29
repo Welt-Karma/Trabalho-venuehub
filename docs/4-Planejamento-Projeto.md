@@ -77,25 +77,25 @@ Atualizado em: 24/05/2025
 
 ## Sprint 2
 
-Atualizado em: 24/05/2025
+Atualizado em: 25/05/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| André e Rafael| Anuncie Local      | 18/05/2025     | 25/05/2025 | 📝    |     |
-| João  | Correção Quem somos   | 18/05/2025     | 25/05/2025 | 📝    |                 |
-| Gustavo e Vinicius   | Hub de Locais  | 18/05/2025    | 25/05/2025 | 📝     |                 |
-| Vitor      | Pagina do Usuario  |  18/05/2025   | 25/05/2025 | 📝    |       |
+| André e Rafael| Anuncie Local      | 18/05/2025     | 25/05/2025 |   ✔️  |  25/05/2025   |
+| João  | Correção Quem somos   | 18/05/2025     | 25/05/2025 | ✔️    |     25/05/2025            |
+| Gustavo e Vinicius   | Hub de Locais  | 18/05/2025    | 25/05/2025 | ✔️     | 25/05/2025            |
+| Vitor      | Pagina do Usuario  |  18/05/2025   | 25/05/2025 | ✔️    |     25/05/2025  |
 
 ## Sprint 3
 
-Atualizado em: 21/04/2024
+Atualizado em: 29/06/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/01/2005      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Gustavo       | Cadastro | 25/05/2025     | 29/06/2025 | ✔️    | 23/06/2025      |
+| Vinicius        | Visual do Site    | 25/05/2025     | 29/06/2025  | ✔️   |     27/06/2025            |
+| André e Welbert       | Responsividade do Site e Correções | 25/05/2025     | 29/06/2025  | ✔️     |   29/06/2025               |
+| Rafael e João       | Slide  |    25/05/2025        | 29/06/2025  | 📝    |       |
 
 Legenda:
 - ✔️: terminado
